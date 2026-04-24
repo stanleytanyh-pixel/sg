@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif", ui-serif, Georgia, serif;
+
+  --color-primary: #121426;
+  --color-gold: #D4AF37;
+  --color-surface: #F9F9F9;
+  --color-surface-dark: #F3F3F4;
+  
+  --radius-none: 0px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-primary font-sans antialiased;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.letter-spacing-widest {
+  letter-spacing: 0.2em;
+}
+
+.letter-spacing-tight {
+  letter-spacing: -0.02em;
+}
